@@ -1,0 +1,23 @@
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+	        <div class="panel-heading d-flex justify-content-center align-items-center">
+			 	<h3 class="panel-title">Add New Doctor</h3>
+			 	<img src="assets/doctor.jpg" alt="Doctor Image" class="doctor-image">
+			</div>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter doctor's name" name="name" [(ngModel)]="doctor.name">
+                        </div>
+                        <button type="button" class="btn btn-success" (click)="saveDoctor()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

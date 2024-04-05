@@ -1,0 +1,14 @@
+/* Center the container */
+.container {
+    margin-top: 50px; 
+}
+
+/* Center the panel */
+#homePanel {
+    margin: 0 auto;
+}
+
+/* Add margin between buttons */
+.btn-primary {
+    margin-right: 10px;
+}

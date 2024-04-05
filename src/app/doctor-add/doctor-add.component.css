@@ -1,0 +1,16 @@
+.panel-heading {
+    display: flex;
+    align-items: center;
+}
+
+.panel-title {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Adjust vertical margin */
+    margin-right: 20px;
+}
+
+.doctor-image {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 20px;
+}

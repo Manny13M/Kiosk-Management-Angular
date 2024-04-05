@@ -1,0 +1,38 @@
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+        	<div class="panel-heading d-flex justify-content-center align-items-center">
+			 	<h3 class="panel-title">Add New Toothbrush</h3>
+			 	<img src="assets/toothbrush.png" alt="Toothbrush Image" class="toothbrush-image ml-3">
+			</div>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter toothbrush name" name="name" [(ngModel)]="toothbrush.name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="price">Price:</label>
+                            <input type="number" class="form-control" id="price" placeholder="Enter price" name="price" [(ngModel)]="toothbrush.price">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" name="quantity" [(ngModel)]="toothbrush.quantity">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="employeeName">Doctor Name:</label>
+					        <select class="form-control" [(ngModel)]="toothbrush.employeeName" name="employeeName">
+						       	@for (doctor of doctors; track doctor.id){
+						                <option [value]="doctor.name">{{doctor.name}}</option>
+						        }
+					        </select>
+                        </div>
+                        <button type="button" class="btn btn-success" (click)="saveToothbrush()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
